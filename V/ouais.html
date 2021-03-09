@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conso Tracker</title>
+</head>
+<body>
+
+    <p>Ton nom :</p>
+
+    <input type="text" id="maybe" required minlength="4" maxlength="50" size="10">
+    <input type="number" type="text" id="yes" required minlength="4" maxlength="50" size="10">
+    
+    <input class="favorite styled"
+    id = "no"
+       type="button"
+       value="Go">
+
+    
+
+
+    <p id="ayay"> </p>
+
+    
+
+    <script>
+
+var lis = ["Trkl, même pas besoin de réviser", "Fais gaffe avec qui tu traînes, privilégie les IL", "Imprime le cours, on sait jamais", 
+                "<a href=\"https://drive.google.com/drive/u/0/folders/0ByEOsvyfy4C8Uy1nOXRWTy1OUkE\">https://drive.google.com/drive/u/0/folders/0ByEOsvyfy4C8Uy1nOXRWTy1OUkE</a>", 
+                "<a href=\"https://teams.microsoft.com/l/channel/19%3a413e69aeb57c4fc189dc9a67f23bc503%40thread.tacv2/G%25C3%25A9n%25C3%25A9ral?groupId=6a324c41-f1b3-4ebc-b252-1586dc7a8a14&tenantId=158716cf-46b9-48ca-8c49-c7bb67e575f3\">https://teams.microsoft.com/l/channel/19%3a413e69aeb57c4fc189dc9a67f23bc503%40thread.tacv2/G%25C3%25A9n%25C3%25A9ral?groupId=6a324c41-f1b3-4ebc-b252-1586dc7a8a14&tenantId=158716cf-46b9-48ca-8c49-c7bb67e575f3</a>",
+            "Une seule issue possible : la reconversion,  <a href=\"https://discord.gg/KrRR7f8Yx2\">https://discord.gg/KrRR7f8Yx2</a>"
+         ];
+    
+    var btn = document.getElementById('no');
+    var maybe = document.getElementById('yes');
+    console.log(btn);
+    var out = document.getElementById('ayay');
+    var yes = document.getElementById("maybe");
+
+    btn.addEventListener('click', upd);
+
+    console.log(yes);
+    
+    function suma(aaa){
+        sum = 0;
+        console.log(aaa);
+        for(i=0; i<aaa.length;i++){
+            sum+= aaa.charCodeAt(i);
+            console.log(aaa.charCodeAt(i));
+        }
+        return sum;
+    }
+
+    function upd(){
+        console.log(suma(yes.value));
+
+        out.innerHTML = azeopiia(maybe.value, yes.value);
+    }
+
+    function azeopiia(a, aa){
+        return a * 4 -15 + 30 * (suma(aa)%100)/100
+    }
+
+    </script>
+
+    
+
+</body>
+</html>
