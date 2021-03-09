@@ -55,8 +55,11 @@ var lis = ["Trkl, même pas besoin de réviser", "Fais gaffe avec qui tu traîne
 
     function upd(){
         console.log(suma(yes.value));
+        score = azeopiia(maybe.value, yes.value);
+        
+        WOW_INCROYABLE = score<25?0:score<50?1:score<75?2:score<90?3:score<100?4:5;
 
-        out.innerHTML = azeopiia(maybe.value, yes.value);
+        out.innerHTML = "Wow, ton score est de " + score + "</br>" + lis[WOW_INCROYABLE];
     }
 
     function azeopiia(a, aa){
