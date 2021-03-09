@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="dk">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,7 +13,7 @@
     <input type="text" id="maybe" required minlength="4" maxlength="50" size="10">
     <input type="number" type="text" id="yes" required minlength="4" maxlength="50" size="10">
     
-    <input class="favorite styled"
+    <input
     id = "no"
        type="button"
        value="Go">
@@ -27,7 +27,7 @@
 
     <script>
 
-var lis = ["Trkl, même pas besoin de réviser", "Fais gaffe avec qui tu traînes, privilégie les IL", "Imprime le cours, on sait jamais", 
+var NOOOON_Ne_Regarde_Pas_Cette_Liste_Tu_Te_Spoil = ["Trkl, même pas besoin de réviser", "Fais gaffe avec qui tu traînes, privilégie les IL", "Imprime le cours, on sait jamais", 
                 "<a href=\"https://drive.google.com/drive/u/0/folders/0ByEOsvyfy4C8Uy1nOXRWTy1OUkE\">https://drive.google.com/drive/u/0/folders/0ByEOsvyfy4C8Uy1nOXRWTy1OUkE</a>", 
                 "<a href=\"https://teams.microsoft.com/l/channel/19%3a413e69aeb57c4fc189dc9a67f23bc503%40thread.tacv2/G%25C3%25A9n%25C3%25A9ral?groupId=6a324c41-f1b3-4ebc-b252-1586dc7a8a14&tenantId=158716cf-46b9-48ca-8c49-c7bb67e575f3\">https://teams.microsoft.com/l/channel/19%3a413e69aeb57c4fc189dc9a67f23bc503%40thread.tacv2/G%25C3%25A9n%25C3%25A9ral?groupId=6a324c41-f1b3-4ebc-b252-1586dc7a8a14&tenantId=158716cf-46b9-48ca-8c49-c7bb67e575f3</a>",
             "Une seule issue possible : la reconversion,  <a href=\"https://discord.gg/KrRR7f8Yx2\">https://discord.gg/KrRR7f8Yx2</a>"
@@ -35,35 +35,35 @@ var lis = ["Trkl, même pas besoin de réviser", "Fais gaffe avec qui tu traîne
     
     var btn = document.getElementById('no');
     var maybe = document.getElementById('yes');
-    console.log(btn);
+    
     var out = document.getElementById('ayay');
     var yes = document.getElementById("maybe");
 
     btn.addEventListener('click', upd);
 
-    console.log(yes);
+    
     
     function suma(aaa){
-        sum = 0;
-        console.log(aaa);
-        for(i=0; i<aaa.length;i++){
-            sum+= aaa.charCodeAt(i);
-            console.log(aaa.charCodeAt(i));
+        jioezziejiozepoqipjilorqjjioijqrjiogrjqio = 0;
+        
+        for(jioezziejiozepoqipji1orqjjioijqrjiogrjqio=0; jioezziejiozepoqipji1orqjjioijqrjiogrjqio<aaa.length;jioezziejiozepoqipji1orqjjioijqrjiogrjqio++){
+            jioezziejiozepoqipjilorqjjioijqrjiogrjqio+= aaa.charCodeAt(jioezziejiozepoqipji1orqjjioijqrjiogrjqio);
+        
         }
-        return sum;
+        return jioezziejiozepoqipjilorqjjioijqrjiogrjqio;
     }
 
     function upd(){
-        console.log(suma(yes.value));
+        
         score = azeopiia(maybe.value, yes.value);
         
         WOW_INCROYABLE = score<25?0:score<50?1:score<75?2:score<90?3:score<100?4:5;
 
-        out.innerHTML = "Wow, ton score est de " + score + "</br>" + lis[WOW_INCROYABLE];
+        out.innerHTML = "Wow, ton score est de " + score + "</br>" + NOOOON_Ne_Regarde_Pas_Cette_Liste_Tu_Te_Spoil[WOW_INCROYABLE];
     }
 
-    function azeopiia(a, aa){
-        return a * 4 -15 + 30 * (suma(aa)%100)/100
+    function azeopiia(aaaalaaaa, aaaa1aaaa){
+        return aaaalaaaa * 4 -15 + 30 * (suma(aaaa1aaaa)%100)/100 //fuck le ;
     }
 
     </script>
